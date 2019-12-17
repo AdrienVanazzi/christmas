@@ -1,0 +1,118 @@
+body{
+	background:#9d0b0b;
+}
+
+h1{
+	font-family: 'Sail', cursive;
+	color: #f7be16;
+}
+
+p{
+	font-family: 'Dancing Script', cursive;
+	color: black;
+	font-size: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: #00818a;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+	color: red;
+	font-size: 36px;
+	font-family: 'Lilita One', cursive;
+	text-decoration: underline;
+}
+
+img{
+	border-radius: 5px;
+}
+
+
+.text-center{
+	text-align: center;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.btn-red{
+	background-color: #e50914;
+	color: white;
+	padding: 6px 10px;
+	border-radius: 5px;
+}
+.btn-red:hover {
+
+	background-color: #010101;
+	color:white;
+}
+
+.list-inline{
+	list-style: none;
+	padding-left: 0px;
+}
+
+
+
+.illustration {
+	position: relative;
+	margin: 0 auto;
+	width : 716px;
+	height: 413px;
+	background : url("neige/illustration.jpg") no-repeat top center;
+}
+ 
+.i-large,
+.i-medium,
+.i-small {
+	position : absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+ 
+.i-large {
+	background: url("neige/particules_large.png") repeat 0px 0px;
+	-webkit-animation: dropFlowParticles 2s linear infinite;
+	     -o-animation: dropFlowParticles 2s linear infinite;
+	        animation: dropFlowParticles 2s linear infinite;
+}
+.i-medium {
+	background: url("neige/particules_medium.png") repeat 0px 0px;
+	-webkit-animation: dropFlowParticles 12s linear infinite;
+	     -o-animation: dropFlowParticles 12s linear infinite;
+	        animation: dropFlowParticles 12s linear infinite;
+}
+.i-small {
+	background:url("neige/particules_small.png") repeat 0px 0px;
+	-webkit-animation: dropFlowParticles 27s linear infinite;
+	     -o-animation: dropFlowParticles 27s linear infinite;
+	        animation: dropFlowParticles 27s linear infinite;
+}
+ 
+@-webkit-keyframes dropFlowParticles {
+	from { background-position: 0 0; }
+	to { background-position: 0 413px; }
+}
+@keyframes dropFlowParticles {
+	from { background-position: 0 0; }
+	to { background-position: 0 413px; }
+}
